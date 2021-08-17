@@ -7,7 +7,7 @@ public class UsingThisExample {
 		UsingThis.Inner inner = usingThis.new Inner();
 		inner.method();
 		
-		
+
 	}
 
 }
