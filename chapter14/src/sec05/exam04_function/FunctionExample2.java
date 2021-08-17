@@ -10,9 +10,9 @@ public class FunctionExample2 {
 			new Student("김소정", 95, 93)
 		);
 	
-	public static double avg (ToIntFunction<Student> function) {
+	public static double avg(ToIntFunction<Student> function) {
 		int sum = 0;
-		for(Student student: list) {
+		for(Student student : list) {
 			sum += function.applyAsInt(student);
 		}
 		double avg = (double) sum / list.size();
@@ -20,12 +20,11 @@ public class FunctionExample2 {
 	}
 	
 	public static void main(String[] args) {
-		double englishAvg = avg( t -> t.getEnglishScore() );
+		double englishAvg = avg( t -> t.getEnglishScore());
 		System.out.println("영어 평균 점수: " + englishAvg);
 		
-		double mathAvg = avg( t -> t.getMathScore() );
+		double mathAvg = avg( t -> t.getMathScore());
 		System.out.println("수학 평균 점수: " + mathAvg);
-		
 		
 	}
 

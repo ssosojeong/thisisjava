@@ -11,7 +11,7 @@ public class SupplierExample {
 		};
 		
 		int num = intSupplier.getAsInt();
-		System.out.println("눈의 수: " + num);
+		System.out.println("눈의 수:" + num);
 
 	}
 
