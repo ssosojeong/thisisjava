@@ -1,4 +1,4 @@
-package verify.exam06;
+package verify.exam0607;
 
 import java.util.function.*;
 
