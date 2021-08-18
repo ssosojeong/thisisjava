@@ -22,12 +22,9 @@ public class LambdaExample {
 		);
 		System.out.println("최대값: " + max);
 		
-		//최소값 얻기
+		//최소값 얻기 -> 삼항 연산자 사용
 		int min = maxOrMin(
-				(score, result) -> {
-					if(score<=result) { return score; }
-					else { return result; } }
-				
+				(score, result) -> (score<=result) ? score : result 
 		);
 		System.out.println("최소값: " + min);
 	}

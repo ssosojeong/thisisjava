@@ -20,7 +20,7 @@ public class MapExample {
 		while(iterator.hasNext()) {
 			Map.Entry<String, Integer> entry = iterator.next();
 			//maxScore 구하기
-			if(entry.getValue() >= maxScore) {
+			if(entry.getValue() > maxScore) {
 				maxScore = entry.getValue();
 				name = entry.getKey();
 			}

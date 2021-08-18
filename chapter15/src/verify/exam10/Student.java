@@ -1,6 +1,6 @@
 package verify.exam10;
 
-public class Student implements Comparable{
+public class Student implements Comparable<Student>{
 	public String id;
 	public int score;
 	
@@ -10,9 +10,7 @@ public class Student implements Comparable{
 	}
 
 	@Override
-	public int compareTo(Object o) {
-		Student student = (Student) o;
-		
+	public int compareTo(Student student) {
 		if(score > student.score) return 1;
 		else if(score == student.score) return 0;
 		else return -1;

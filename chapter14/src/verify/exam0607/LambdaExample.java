@@ -10,12 +10,11 @@ public class LambdaExample {
 	
 	//avg 메소드 작성
 	public static double avg(ToIntFunction<Student> function) {
-		int count = 0, sum = 0;
+		int sum = 0;
 		for(Student student : students) {
-			count ++;
 			sum += function.applyAsInt(student);
 		}
-		return (double)sum / count;
+		return (double)sum / students.length;
 	}
 
 	public static void main(String[] args) {
