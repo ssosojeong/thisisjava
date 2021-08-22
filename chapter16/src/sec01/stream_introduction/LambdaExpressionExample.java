@@ -15,7 +15,7 @@ public class LambdaExpressionExample {
 		stream.forEach( s -> {
 			String name = s.getName();
 			int score = s.getScore();
-			System.out.println(name + ": " + score); //
+			System.out.println(name + ": " + score); //ㅎ
 		});
 				
 		
